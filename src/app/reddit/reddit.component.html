@@ -1,0 +1,9 @@
+<!-- <app-single-reddit [Post]= "p" *ngFor= "let p of PostList, index as i">
+
+</app-single-reddit> -->
+
+<div *ngFor ="let P of PostList, index as i">
+    <p>{{ i+1 }}. {{ P.data.title }}</p>
+   <a href={{P.data.url}}> <p>{{ P.data.url }}</p> </a>
+    <img  src="{{ P.data.thumbnail }}" />
+</div> 
